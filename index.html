@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Convert</title>
+        <link rel="stylesheet" href="styleu.css">
+        <h1 class="title">UNIT CONVERTER</h1>
+    </head>
+    <body>
+        <div class="container">
+          <div class="input-container">
+            <label for="kilometer"class="label">KiloMeter</label>
+            <input type="number" id="km" placeholder="Kilometer"
+            oninput="kilometer(parseFloat(this.value))"/>
+          </div>
+          <div class="input-container">
+            <label for="meter" class="label">Meter </label>
+            <input type="number" id="m" placeholder="Meter"
+            onchange="meter(parseFloat(this.value))"/>
+          </div>
+          <div class="input-container">
+            <label for="centimeter" class="label">Centimeter</label>
+            <input type="number" id="cm" placeholder="Centimeter"
+            onchange="centimeter(parseFloat(this.value))"/>
+          </div>
+          <div class="input-container">
+            <label for="millimeter" class="label">Millimeter</label>
+            <input type="number" id="mm" placeholder="Millimeter"
+            onchange="millimeter(parseFloat(this.value))"/>
+          </div>
+        </div>
+        <script src="scriptu.js"></script>
+    </body>
+</html>
